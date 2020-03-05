@@ -90,6 +90,12 @@ class CollapsibleCalendar : UICalendar, View.OnClickListener {
     val month: Int
         get() = mAdapter!!.calendar.get(Calendar.MONTH)
 
+    val currentWeekPosition
+        get() = mCurrentWeekIndex
+
+    val calendar
+        get() = mAdapter?.calendar
+
     /**
      * The date has been selected and can be used on Calender Listener
      */
